@@ -1,6 +1,6 @@
 {
   "name": "@formidable-webview/eslint-config-webjs",
-  "version": "0.10.0",
+  "version": "1.0.0",
   "description": "An eslint configuration to validate scripts injected in WebViews.",
   "main": "index.js",
   "peerDependencies": {
