@@ -1,6 +1,6 @@
 {
   "name": "@formidable-webview/eslint-config-webjs",
-  "version": "1.0.0",
+  "version": "0.10.0",
   "description": "An eslint configuration to validate scripts injected in WebViews.",
   "main": "index.js",
   "peerDependencies": {
@@ -15,9 +15,31 @@
     "type": "git",
     "url": "git+ssh://git@github.com/formidable-webview/eslint-config-webjs"
   },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular"
+      }
+    }
+  },
   "author": "Jules Sam. Randolph <jules.sam.randolph@gmail.com> (https://github.com/jsamr)",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^1.1.4",
+    "husky": "^4.2.5",
+    "release-it": "^13.6.6"
   }
 }
